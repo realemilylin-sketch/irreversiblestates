@@ -1,0 +1,136 @@
+---
+title: Evidence Output Spec (IS-EOS v0.1)
+description: A minimal specification for evidence outputs used at dispute nodes.
+---
+
+This document defines the **Evidence Output Specification (IS-EOS v0.1)**.
+
+It specifies the **minimum structural requirements** for an evidence output used to support attribution and finality at a dispute node.
+
+The specification is **informative, not normative**.
+
+---
+
+## Purpose
+
+The purpose of this specification is to define what constitutes a **complete and reviewable evidence output**.
+
+An evidence output conforming to IS-EOS v0.1 is intended to:
+
+- support attribution at a dispute node,
+- preserve integrity across handoffs,
+- prevent silent alteration or selective presentation.
+
+This specification does not define how evidence is collected or analyzed.
+
+---
+
+## Scope
+
+IS-EOS v0.1 applies to evidence outputs used in:
+
+- acceptance or handoff disputes,
+- transitions of custody or responsibility,
+- processes where finality depends on documented conditions.
+
+It applies across physical, digital, and procedural contexts.
+
+---
+
+## Conformance
+
+An evidence output **conforms to IS-EOS v0.1** when it includes, at minimum:
+
+- a summary,
+- an attachment index,
+- an integrity statement,
+- a version record.
+
+All components must be present and internally consistent.
+
+---
+
+## Required Components
+
+### Summary
+
+The summary provides a concise description of:
+
+- the dispute node,
+- the event or condition being documented,
+- the scope of the evidence output.
+
+The summary does not contain conclusions or judgments.
+
+---
+
+### Attachment Index
+
+The attachment index lists all included materials using **immutable identifiers**.
+
+Each entry specifies:
+
+- identifier,
+- description,
+- creation or capture context.
+
+The index establishes ordering and completeness.
+
+---
+
+### Integrity Statement
+
+The integrity statement describes how evidence integrity is preserved.
+
+It includes:
+
+- handling conditions,
+- sealing or protection measures,
+- verification or timestamping practices, if applicable.
+
+The statement explains **why the evidence should be considered untampered** within the process.
+
+---
+
+### Version Record
+
+The version record documents:
+
+- creation time,
+- release state,
+- any subsequent revisions.
+
+The version record prevents silent modification and establishes temporal order.
+
+---
+
+## Assembly Principles
+
+Evidence outputs are assembled according to the following principles:
+
+- completeness over selectivity,
+- ordering over aggregation,
+- transparency over optimization.
+
+Evidence is evaluated as a **structured output**, not as isolated artifacts.
+
+---
+
+## What This Spec Does Not Do
+
+IS-EOS v0.1 does not:
+
+- prescribe tools, sensors, or detection methods,
+- determine legal or evidentiary admissibility,
+- assign fault or liability,
+- guarantee correctness or truth.
+
+It defines **structure**, not outcome.
+
+---
+
+## Relation to Irreversible States
+
+Evidence outputs conforming to IS-EOS v0.1 support evaluation of **irreversible states** at dispute nodes.
+
+They provide the structural basis upon which finality may be assessed within a process.

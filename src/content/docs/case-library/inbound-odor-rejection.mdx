@@ -1,0 +1,126 @@
+---
+title: Inbound Odor Rejection at Receiving
+description: A reference case illustrating acceptance finality at receiving.
+---
+
+## Scenario
+
+A shipment arrives at a receiving location.  
+During initial inspection, an abnormal odor is detected, and the receiving party rejects the shipment on that basis.
+
+The dispute concerns **when the odor condition should be attributed** and **whether responsibility transferred at receiving**.
+
+---
+
+## Dispute Node
+
+The dispute node occurs at the moment of **receiving and inspection**, where acceptance could either occur or be withheld.
+
+This node determines whether **acceptance finality** is reached.
+
+---
+
+## Typical Breakpoints
+
+Common points where attribution fails include:
+
+- absence of a documented odor baseline prior to shipment,
+- incomplete chain-of-custody records,
+- lack of verified timestamps for inspection,
+- ambiguity about whether acceptance occurred before rejection.
+
+---
+
+## Evidence Output (Minimum Set)
+
+The minimum evidence output required to evaluate this dispute node is structured according to **IS-EOS v0.1** and includes the following components.
+
+### Summary
+
+A concise description of:
+
+- the receiving event,
+- the detected odor condition,
+- whether acceptance was completed or withheld at the dispute node.
+
+The summary does not contain conclusions or fault assignments.
+
+---
+
+### Attachment Index
+
+An attachment index enumerating all included materials using immutable identifiers, such as:
+
+- inspection records at receiving,
+- time-stamped photographs or video,
+- packaging condition records,
+- chain-of-custody documentation.
+
+The index establishes completeness and ordering.
+
+---
+
+### Integrity Statement
+
+An integrity statement describing:
+
+- handling conditions of the shipment at receiving,
+- measures taken to preserve evidence integrity,
+- verification or timestamping practices, if applicable.
+
+The statement explains why the evidence should be considered untampered **within the process**.
+
+---
+
+### Version Record
+
+A version record documenting:
+
+- creation time of the evidence output,
+- release state,
+- any subsequent revisions.
+
+The version record prevents silent modification.
+
+---
+
+## Assembly
+
+The evidence output is assembled to:
+
+- preserve integrity across handling,
+- document the sequence of events at receiving,
+- support attribution relative to the acceptance decision.
+
+Evidence is evaluated as a **structured output**, not as isolated artifacts.
+
+---
+
+## Outcome Framing
+
+If acceptance occurred before the odor condition was documented, **acceptance finality** may have been reached.
+
+If acceptance was withheld and documented at the dispute node, responsibility may remain with the prior custodian.
+
+This framing does not determine correctness or fault; it establishes **where finality forms**.
+
+---
+
+## Conformance
+
+The evidence output described in this case is structured to conform to **Evidence Output Spec (IS-EOS v0.1)**.
+
+---
+
+## Relation to Acceptance / Handoff Finality
+
+This case illustrates how **acceptance finality** can form—or fail to form—at receiving.
+
+The outcome depends on whether acceptance was completed before the odor condition was recorded.
+
+---
+
+## Notes
+
+This reference case is illustrative.  
+It does not prescribe inspection methods, detection tools, or legal conclusions.

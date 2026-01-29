@@ -1,26 +1,45 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
+import { defineConfig } from "astro/config";
+import starlight from "@astrojs/starlight";
+import rapide from "starlight-theme-rapide";
 
-// https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-			],
-		}),
-	],
+  site: "https://irreversiblestates.com",
+  integrations: [
+    starlight({
+      title: "Irreversible States",
+      description:
+        "A reference definition of irreversible states and finality conditions in real-world processes.",
+   
+      sidebar: [
+        { label: "Reading Guide", link: "/reading-guide/" },
+
+        { label: "Foundations", items: [{ label: "Overview", link: "/foundations/" }] },
+        { label: "Mechanisms", items: [{ label: "Overview", link: "/mechanisms/" }] },
+
+        {
+          label: "Playbooks",
+          items: [
+            { label: "Overview", link: "/playbooks/" },
+            { label: "Acceptance / Handoff Finality", link: "/playbooks/acceptance-handoff-finality/" },
+          ],
+        },
+
+        {
+          label: "Case Library",
+          items: [
+            { label: "Overview", link: "/case-library/" },
+            { label: "Inbound Odor Rejection at Receiving", link: "/case-library/inbound-odor-rejection/" },
+          ],
+        },
+
+        {
+          label: "Toolkit",
+          items: [{ label: "Evidence Output Spec", link: "/toolkit/evidence-output-spec/" }],
+        },
+
+        { label: "Glossary", link: "/glossary/" },
+        { label: "Colophon", link: "/meta/colophon/" },
+      ],
+    }),
+  ],
 });
