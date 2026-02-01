@@ -9,7 +9,13 @@ export default defineConfig({
       title: "Irreversible States",
       description:
         "A reference definition of irreversible states and finality conditions in real-world processes.",
-   
+
+      // +++ ADD THIS BLOCK +++
+      footer: {
+        text: "Contact: contact@irreversiblestates.com",
+      },
+      // +++ END +++
+
       sidebar: [
         { label: "Reading Guide", link: "/reading-guide/" },
 
@@ -43,3 +49,4 @@ export default defineConfig({
     }),
   ],
 });
+
