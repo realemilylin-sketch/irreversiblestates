@@ -11,9 +11,9 @@ export default defineConfig({
         "A reference definition of irreversible states and finality conditions in real-world processes.",
 
       // +++ ADD THIS BLOCK +++
-      footer: {
-        text: "Contact: contact@irreversiblestates.com",
-      },
+      components: {
+    Footer: "./src/components/MinimalFooter.astro",
+  },
       // +++ END +++
 
       sidebar: [
