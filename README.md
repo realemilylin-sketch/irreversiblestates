@@ -21,4 +21,4 @@ This repository is a **public reference mirror** of the documentation site:
 Slow, structure-preserving updates.
 
 ## Contact
-contact@irreversiblestates.com
+contact@irreversiblestates.com 
